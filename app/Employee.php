@@ -20,4 +20,9 @@ class Employee extends Model
 
     return $this ->belongsTo('App\Location');
   }
+
+  public function tasks() {
+
+    return $this ->belongsToMany('App\Task');
+  }
 }
